@@ -12,15 +12,15 @@ const App = () => {
 
 const items = [{value: 'Main Page', href: '/', icon: 'anchor'},{value: 'Heroes Library', href: '/services', icon: 'service'},{value: 'About', href: '/about', icon: 'info'}]
 
-const [menuActive, setMenuActive] = useState(false)
-const [isMobile, setIsMobile] = useState(false)
+
+
 
 
 
   return (
     <div className="app">
       <Header />
-     <Menu active={menuActive} setActive={setMenuActive} header={'Navigation'} items={items} />
+      <Menu header={'Navigation'} items={items} />
     <Routes>
       <Route path='/' element ={<Main />} />
       <Route path='/services' element={<HeroesLibrary />} />

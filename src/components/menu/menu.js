@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom'
 import './../menu/menu.scss'
+import { useDispatch, useSelector } from 'react-redux';
 
 
-const Menu = ({header, items, active, setActive}) => {
+const Menu = ({header, items}) => {
+
+    const dispatch = useDispatch();
+    const menuIsOpen = useSelector(state => state.menuIsOpen)
 
     return (
-        <div className={active ? 'menu active' : 'menu'} onClick={() => setActive(false)}>
+        <div className={menuIsOpen ? 'menu active' : 'menu'} onClick={() => dispatch({type: "TOGGLE_MENU"})}>
             <div className="blur"></div>
             <div className="menu__content">
                 <div className="menu__header">{header}</div>  
