@@ -1,6 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1.React Router 
+2.React Redux
+3.API Base Marvel
 
 ## Available Scripts
 
