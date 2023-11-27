@@ -1,0 +1,47 @@
+@import '../../variables/_variables';
+
+.menu {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 50;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-130%);
+    transition: all .2s;
+  
+    a {
+        color: inherit;
+    }
+    &__link {
+        font-size: 20px;
+    }
+    
+}
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu__header {
+    font-weight: 600;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.blur {
+    width: 100vw;
+    height: 100vh;
+    margin-left: 20%;
+    backdrop-filter: blur(2px);
+    position: absolute;
+}
+
+.menu__content {
+    width: 30%;
+    height: 100%;
+    background-color: $MenuColor;
+    transition: all .4s;
+}
