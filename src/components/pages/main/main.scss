@@ -1,0 +1,26 @@
+.carousel {
+    display: flex;
+}
+.box {
+    width: 100%;
+    background-color: red;
+     border: 2px solid black;   
+
+    
+}
+.box2 {
+    width: 100%;
+    background-color: aquamarine;
+    border: 2px solid black;
+}   
+.main {
+    width: 95vw;
+    margin-left: 2%;
+    padding-top: 8%;
+  
+    p {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  }
+  

@@ -4,7 +4,7 @@ const Spinner = () => {
 
 
     return (
-        <div className='loader__display' style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <div className='loader__display'>
         <span className="loader"></span>
         </div>
         

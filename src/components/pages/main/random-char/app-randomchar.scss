@@ -2,9 +2,10 @@
 
 
 .randomchar {
+  
     display: grid;
-    
-    grid-template-columns: repeat(2, 50%);
+    width: 90vw;
+    grid-template-columns: repeat(2, 50% 50%);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
     &__block {
         display: grid;
@@ -51,6 +52,7 @@
         margin-left: 5px;
     }
     &__static {
+        width: 100%;
         padding: 40px 35px;
         background-color: #232222;
         position: relative;

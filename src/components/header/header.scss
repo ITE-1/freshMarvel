@@ -6,29 +6,10 @@
     position: fixed;
     width: 100%;
    
-    border-bottom:15px solid rgb(135, 19, 118);
+    border-bottom:10px solid rgb(3, 0, 0);
     display: flex;
     align-items: center;
     z-index: 50;
 
-    &__wrapper{
-
-
-        &__logo {
-            margin-left: 10px;
-            letter-spacing: 3px;
-            color: $HeaderColor1;
-            font-weight: 500;
-            font-family: 'Vina Sans', sans-serif;
-            font-size: 32px;
-            cursor: pointer;
-        
-        }
-        &__logo:hover{
-            color:#ff0523;
-            background-color: white;
-            opacity: .7;
-        
-        }
-    }
+    
 }

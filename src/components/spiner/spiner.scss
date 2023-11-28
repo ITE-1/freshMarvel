@@ -1,8 +1,17 @@
 .loader {
-
+    
     animation: rotate 1s infinite;
     height: 50px;
     width: 50px;
+    &__display{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+     
+    
+     
+
+    }
   }
 
   .loader:before,

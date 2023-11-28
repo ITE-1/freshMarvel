@@ -1,0 +1,15 @@
+.designedBy {
+    font-weight: 600;
+    font-size: 20px;
+
+    &__first{
+        font-size: 16px;
+        font-family: 500;
+    }
+    &__second{
+        color: orange;
+    }
+    &__third{
+        color: red;
+    }
+}

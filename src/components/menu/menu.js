@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 const Menu = ({header, items}) => {
 
     const dispatch = useDispatch();
-    const menuIsOpen = useSelector(state => state.menuIsOpen)
+    const menuIsOpen = useSelector(state => state.isMenuOpen.isMenuOpen)
 
     return (
         <div className={menuIsOpen ? 'menu active' : 'menu'} onClick={() => dispatch({type: "TOGGLE_MENU"})}>

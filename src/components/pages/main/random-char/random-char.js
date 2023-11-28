@@ -31,13 +31,16 @@ useEffect(() => {
 },[])
 
     return (
-        <div className="randomchar">
-            {loading ? <Spinner /> : <RandomcharBlock {...randomCharacter}/>}
+        <div style={{display: 'flex', justifyContent:'center', alignItems:'center', width: '100%'}}>
+             <div className="randomchar">
+                {loading ? <Spinner /> : <RandomcharBlock {...randomCharacter}/>}
        
-            {/* <button onClick={() => console.log(randomCharacter)}>ss</button> */}
+                {/* <button onClick={() => console.log(randomCharacter)}>ss</button> */}
             {/* {error ? <RandomcharBlock /> : ''} */}
             <RandnomCharStatic getCharacter={fetchData}/>
         </div>
+        </div>
+       
     )
 }
 

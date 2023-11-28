@@ -1,11 +1,15 @@
-
+import './designed.scss'
 
 const DesignedBy = () => {
 
 return (
-    <>
-      <span style={{textAlign: 'right', fontSize: '600'}}>designed by <span style={{color: 'orange'}}>@</span>IT<span style={{color: 'red'}}>E</span>/</span>
-    </>
+  <a href='https://github.com/ITE-1' style={{listStyle: 'none', color: 'inherit'}}> <div className="designedBy">
+  <span className="designedBy__first">designed by </span>
+    <span className="designedBy__second">@</span>IT
+      <span className="designedBy__third">E</span>/
+  </div>
+  </a>
+   
 )
 }
 
