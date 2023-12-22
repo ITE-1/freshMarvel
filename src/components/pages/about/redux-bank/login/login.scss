@@ -1,0 +1,22 @@
+.form {
+    &__title {
+        margin-bottom: 5%;
+    }
+    p{
+        margin-top: 10px;
+    }
+    margin-left: 20px;
+
+   &__span{
+    
+    color: blue;
+        cursor: pointer;
+    }
+   &__span:hover{
+    color: rgb(255, 0, 0);
+        cursor: pointer;
+    }
+    &__button{
+        margin-top: 15px;
+    }
+}

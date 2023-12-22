@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+
 import DesignedBy from '../../author-license/designedBy';
 import '../header-wrapper/header-wrapper.scss';
 
@@ -13,7 +14,7 @@ const HeaderWrapper = () => {
 
   return (
     <div className="header__wrapper">
-      <div onClick={() =>openMenu()} className="header__wrapper__logo">
+      <div onClick={openMenu} className="header__wrapper__logo">
         Marvel<span>information portal</span>
       </div>
 

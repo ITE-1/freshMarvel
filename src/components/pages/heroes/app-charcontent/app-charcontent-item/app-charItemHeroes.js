@@ -1,13 +1,14 @@
 import Abys from '../abyss.jpg';
 
-const CharItem = ({src, name}) => {
+const CharItem = ({name, description, thumbnail}) => {
 
 
 
     return (
         <li className='char__item'>
-            <img src={Abys} alt='{Abys}'/>
-            <div className='char__name'>name - {name}</div>    
+            <img src={thumbnail} alt='no image'/>
+          
+            <div className='char__name'>{name}</div>    
         </li>
     )
 }

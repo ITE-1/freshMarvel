@@ -1,3 +1,5 @@
+import Bank from "./redux-bank/bank"
+import Resume from "./resume"
 
 
 const About = () => {
@@ -6,7 +8,14 @@ const About = () => {
 
 
     return (
-        <div style={{paddingTop: '50px'}}>About</div>
+        <>
+      
+
+             <Resume />
+        </>
+           
+        
+      
     )
 }
 

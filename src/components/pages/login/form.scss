@@ -1,0 +1,17 @@
+
+.form {
+  
+    display: flex;
+    flex-direction: column;
+
+    background-color: burlywood;
+   
+    &__label {  
+        padding-top: 6%;
+        display: grid;
+        grid-template-columns: 20% 70%;
+    }
+    &__input {
+       
+    }
+}

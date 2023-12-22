@@ -1,0 +1,34 @@
+
+
+
+
+.menu__portal {
+
+
+    width: 150px;
+    padding: 2px 2px 2px 2px;
+    background-color: burlywood;
+    border: 2px solid brown;
+
+    &.show {
+        opacity: 1;
+        transition: opacity ease-in-out .4s;
+        display: block;
+    }
+    &.hide {
+        opacity: 0;
+        transition: opacity ease-in-out .9s;
+        display: none;
+    }
+    &__title {
+        font-size: 14px;
+    }
+    button {
+        
+    }
+}
+
+.arrow-up {
+    width: 20px;
+}
+

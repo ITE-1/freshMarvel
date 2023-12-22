@@ -1,27 +1,13 @@
-
+import { useContext } from 'react';
+import { heroesLibraryContext } from '../heroesLibrary';
 import './app-charcontent.scss';
 import MarvelServices from '../../../../fetchindData/marvelServices';
 import CharItem from './app-charcontent-item/app-charItemHeroes';
-import { useDispatch, useSelector } from 'react-redux';
 
 const marvelServies = new MarvelServices();
 
 const CharList = () => {
-
-// const dispatch = useDispatch();
-// const charactersList = useSelector(state => state.charactersList);
-
-// const getCharactersList = async () => {
-
-//   try {
-//      await marvelServies
-//           .getAllCharacters()
-//           .then(data => )
-//   }
-  
-// }
-
-
+  const {charactersList} = useContext(heroesLibraryContext);
   
   const _getThumbnailStyle = (thumbnail) => {
     let imgStyle = { objectFit: 'cover' };
@@ -40,27 +26,26 @@ const CharList = () => {
     return imgStyle;
   };
 
-  const handleSelectItem = (e) => {
-    const currentTarget = e.target;
-    console.log(currentTarget)
+  const handleSelectItem = () => {
+  console.log(charactersList)
+
   }
   
-
+  
 
   return (
 
         <div className='char__list'>
             
             <ul className='char__grid'>
-            
-                 <CharItem />
-                       
-          
+                 
+                {charactersList.map(item => <CharItem key={item.id} {...item}/>
+              )}
               
   
                  
             </ul>
-            <button className="myButton">Загрузить персонажей</button>
+            <button onClick={handleSelectItem} className="myButton">Загрузить персонажей</button>
         </div>
     )
 };
